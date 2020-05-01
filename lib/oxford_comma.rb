@@ -1,12 +1,11 @@
 def oxford_comma(fruits)
    if fruits.length == 2
-     return "#{fruits[0]} and #{fruits[1]}"
+      "#{fruits[0]} and #{fruits[1]}"
    elsif fruits.length > 2
-     fruits.pop
-
-
+     last_fruit = fruits.pop
+     fruits.join(", ") << ", and #{last_fruit}."
    else fruits.length == 1
-       return "#{fruits[0]}"
+        "#{fruits[0]}"
 
    end
 end
