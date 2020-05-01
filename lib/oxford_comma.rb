@@ -3,7 +3,7 @@ def oxford_comma(fruits)
       "#{fruits[0]} and #{fruits[1]}"
    elsif fruits.length > 2
      last_fruit = fruits.pop
-     fruits.join(", ") << ", and #{last_fruit}."
+     fruits.join(", ") << ", and #{last_fruit}"
    else fruits.length == 1
         "#{fruits[0]}"
 
