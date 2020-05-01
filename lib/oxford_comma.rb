@@ -3,10 +3,10 @@ def oxford_comma(fruits)
      return "#{fruits[0]} and #{fruits[1]}"
    elsif fruits.length > 2
      fruits.pop
-     
-    
+
+
    else fruits.length == 1
        return "#{fruits[0]}"
-     
+
    end
 end
